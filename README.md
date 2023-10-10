@@ -65,7 +65,7 @@ Step 6: Re-build and run the app with Compose
 Step 7: Update the application
 		    change the Hello World! message to Hello from Docker! in app.py
 		
-return 'Hello from Docker! I have been seen {} times.\n'.format(count)
+	return 'Hello from Docker! I have been seen {} times.\n'.format(count)
 
 Refresh the app in your browser. The greeting should be updated, and the counter should still be incrementing.
 
