@@ -17,9 +17,8 @@ Prerequisites
 			
 4. Create another file called requirements.txt in your project directory and 
 paste the following code in:
-		
-	flask
-	redis
+	- flask
+	- redis
 			
 **Step 2**: Create a Dockerfile
        -> Create a file named Dockerfile
@@ -56,11 +55,11 @@ This example service uses the default port for the Flask web server, 5000.
 The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_DEBUG environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.
 	
 **Step 6**: Re-build and run the app with Compose
-    	# docker compose up
+    	* docker compose up
         or 
-    	# docker compose up -d   -> run in detached mode
-    	# docker compose ps      -> see what currently running
-    	#docker compose stop    -> to stop
+    	* docker compose up -d   -> run in detached mode
+    	* docker compose ps      -> see what currently running
+    	* docker compose stop    -> to stop
 		
 **Step 7**: Update the application
 		    change the Hello World! message to Hello from Docker! in app.py
