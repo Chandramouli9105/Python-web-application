@@ -57,11 +57,11 @@ The new volumes key mounts the project directory (current directory) on the host
 	
 **Step 6**: Re-build and run the app with Compose
 
-	- docker compose up
+	docker compose up
         or 
-    	- docker compose up -d    # run in detached mode
-    	- docker compose ps       # see what currently running
-    	- docker compose stop     # to stop
+    	docker compose up -d    # run in detached mode
+    	docker compose ps       # see what currently running
+    	docker compose stop     # to stop
 		
 **Step 7**: Update the application
 		    change the Hello World! message to Hello from Docker! in app.py
