@@ -27,16 +27,16 @@ Step 2: Create a Dockerfile
 Step 3: Define services in a Compose file
 		  -> Create a file called compose.yaml
 		
-    	This Compose file defines two services: web and Redis.
-    	The web service uses an image that's built from the Dockerfile in the current directory. It then binds the container and the host machine to the exposed port, 8000. 
-      This example service uses the default port for the Flask web server, 5000.
+This Compose file defines two services: web and Redis.
+The web service uses an image that's built from the Dockerfile in the current directory. It then binds the container and the host machine to the exposed port, 8000. 
+This example service uses the default port for the Flask web server, 5000.
 	
  Step 4: Build and run your app with Compose
 
-		start up your application by running 
+	start up your application by running 
 		# docker compose up
 				
-		Check using public_url:8000
+	Check using public_url:8000
 		
 Step 5: Edit the Compose file to add a bind mount
 
