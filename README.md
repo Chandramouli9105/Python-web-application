@@ -34,7 +34,7 @@ This example service uses the default port for the Flask web server, 5000.
 
 start up your application by running 
 
-		 docker compose up
+	docker compose up
 				
 Check using public_url:8000
 		
