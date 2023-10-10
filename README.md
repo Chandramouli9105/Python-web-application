@@ -53,9 +53,7 @@ Step 5: Edit the Compose file to add a bind mount
               image: "redis:alpine"
 	
 	
-        	The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, 
-          without having to rebuild the image. The environment key sets the FLASK_DEBUG environment variable, which tells flask run to run in development mode and reload 
-          the code on change. This mode should only be used in development.
+The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_DEBUG environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.
 	
 Step 6: Re-build and run the app with Compose
     		# docker compose up
