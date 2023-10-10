@@ -8,27 +8,27 @@ Prerequisites
 
 **Step 1**: Define the application dependencies
 
-	    1. Create a directory for the project:
-			# mkdir web-app
-			# cd web-app
+1. Create a directory for the project:
+	# mkdir web-app
+	# cd web-app
 			
-		  2. Create a file called app.py in your project directory and paste the following code in:
-			-> in app.py redis is the hostname of the redis container on the application's network. We use the default port for Redis, 6379
+2. Create a file called app.py in your project directory and paste the following code in:
+   -> in app.py redis is the hostname of the redis container on the application's network. We use the default port for Redis, 6379
 			
-		  3. Create another file called requirements.txt in your project directory and 
-		     paste the following code in:
+3. Create another file called requirements.txt in your project directory and 
+paste the following code in:
 		
-			  flask
-			  redis
+	flask
+	redis
 			
 **Step 2**: Create a Dockerfile
-  		-> Create a file named Dockerfile
+       -> Create a file named Dockerfile
 
 **Step 3**: Define services in a Compose file
-		  -> Create a file called compose.yaml
-		
+        -> Create a file called compose.yaml
+
 This Compose file defines two services: web and Redis.
-The web service uses an image that's built from the Dockerfile in the current directory. It then binds the container and the host machine to the exposed port, 8000. 
+The web service uses an image that's built from the Dockerfile in the current directory. It then binds the container and the host machine to the exposed port, 8000.
 This example service uses the default port for the Flask web server, 5000.
 	
 **Step 4**: Build and run your app with Compose
