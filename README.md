@@ -9,13 +9,13 @@ Prerequisites
 **Step 1**: Define the application dependencies
 
 1. Create a directory for the project:
-	# mkdir web-app
-	# cd web-app
+	mkdir web-app
+	cd web-app
 			
-2. Create a file called app.py in your project directory and paste the following code in:
+3. Create a file called app.py in your project directory and paste the following code in:
    -> in app.py redis is the hostname of the redis container on the application's network. We use the default port for Redis, 6379
 			
-3. Create another file called requirements.txt in your project directory and 
+4. Create another file called requirements.txt in your project directory and 
 paste the following code in:
 		
 	flask
@@ -56,11 +56,11 @@ This example service uses the default port for the Flask web server, 5000.
 The new volumes key mounts the project directory (current directory) on the host to /code inside the container, allowing you to modify the code on the fly, without having to rebuild the image. The environment key sets the FLASK_DEBUG environment variable, which tells flask run to run in development mode and reload the code on change. This mode should only be used in development.
 	
 **Step 6**: Re-build and run the app with Compose
-    		# docker compose up
+    	# docker compose up
         or 
-    		# docker compose up -d   -> run in detached mode
-    		# docker compose ps      -> see what currently running
-    		#docker compose stop    -> to stop
+    	# docker compose up -d   -> run in detached mode
+    	# docker compose ps      -> see what currently running
+    	#docker compose stop    -> to stop
 		
 **Step 7**: Update the application
 		    change the Hello World! message to Hello from Docker! in app.py
